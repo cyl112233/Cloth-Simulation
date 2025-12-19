@@ -1,0 +1,23 @@
+# 基础计算与深度学习框架
+torch>=2.0.0,<2.4.0
+torchvision>=0.15.0,<0.17.0
+numpy>=1.23.0,<1.26.0
+scipy>=1.9.0,<1.12.0
+
+# 3D渲染与几何处理核心库
+kaolin==0.15.0  # NVIDIA Kaolin（布料渲染/网格处理）
+pyobjc-core>=9.0.0; sys_platform == 'darwin'  # macOS下kaolin依赖
+pyobjc-framework-Cocoa>=9.0.0; sys_platform == 'darwin'  # macOS下kaolin依赖
+
+# 布料仿真自定义模块依赖（若diffsim是第三方库/需说明）
+# 注：diffsim为自定义布料仿真模块，需用户自行确保该模块可导入
+# diffsim>=0.1.0  # 若diffsim发布到PyPI，可添加此条
+
+# 日志/文件处理
+python-dotenv>=1.0.0
+tqdm>=4.64.0,<5.0.0
+
+# 可选：开发/调试依赖（可注释，建议保留）
+pytest>=7.0.0,<8.0.0  # 单元测试
+black>=23.0.0,<24.0.0  # 代码格式化
+flake8>=6.0.0,<7.0.0   # 代码检查
